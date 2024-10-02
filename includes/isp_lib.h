@@ -27,10 +27,10 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/video/background_segm.hpp> /// for motion detector
 #ifdef HAVE_OPENCV_CUDA_SUPPORT
-#include <opencv4/opencv2/cudaobjdetect.hpp>
-#include <opencv4/opencv2/cudaimgproc.hpp>
-#include <opencv4/opencv2/cudafilters.hpp>
-#include <opencv4/opencv2/cudaarithm.hpp>
+#include <opencv2/cudaobjdetect.hpp>
+#include <opencv2/cudaimgproc.hpp>
+#include <opencv2/cudafilters.hpp>
+#include <opencv2/cudaarithm.hpp>
 #endif
 
 // Define a pixel
