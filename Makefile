@@ -3,11 +3,11 @@ CROSS_COMPILE ?=
 #CPP      	:= $(CROSS_COMPILE)clang++ #clang++ is better for debug but slower on compile
 CPP      	:= $(CROSS_COMPILE)g++ 
 DBGFLAGS 	:= -g
-CPPFLAGS 	:= -std=c++11 -Wall -Wextra `pkg-config --cflags opencv gtk+-3.0` 
+CPPFLAGS 	:= -std=c++11 -Wall -Wextra `pkg-config --cflags opencv4 gtk+-3.0` 
 CPPOBJFLAGS	:= $(CPPFLAGS) -c 
 
 LDLIBS = $(shell pkg-config --libs gtk+-3.0)
-LDLIBCV = $(shell pkg-config --libs opencv)
+LDLIBCV = $(shell pkg-config --libs opencv4)
 
 LDFLAGS	+= \
 		-fopenmp \
